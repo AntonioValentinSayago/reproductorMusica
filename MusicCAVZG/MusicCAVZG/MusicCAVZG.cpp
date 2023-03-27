@@ -8,12 +8,13 @@
 // Global Class
 ControllerSongs* ctrlSongs = new ControllerSongs;
 
+
 int main()
 {
-    std::cout << "Programa main \n";
-    ctrlSongs->createSong(1, "PumpedUpKicks", "FosterThePeople", "4:15", "Indie", "https://youtu.be/SDTZ7iX4vTQ", false);
-    ctrlSongs->printSong();
-    system("pause");
+	std::cout << "Reproductor CAVZG\n";
+	ctrlSongs->createSong(1, "PalmTrees", "BaxterDury", "3:50", "Indie", "BaxterDury_PalmTrees.mp3", false);
+	ctrlSongs->printSong();
+	ctrlSongs->startSong();
+	system("pause");
 }
-
 
