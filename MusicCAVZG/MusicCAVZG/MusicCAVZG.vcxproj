@@ -127,7 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ControllerSongs.cpp" />
     <ClCompile Include="MusicCAVZG.cpp" />
+    <ClCompile Include="Songs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ControllerSongs.h" />
+    <ClInclude Include="Songs.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

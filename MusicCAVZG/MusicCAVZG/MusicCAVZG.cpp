@@ -3,16 +3,17 @@
 
 #include <iostream>
 #include <string>
+#include "ControllerSongs.h"
 
-int IDMusica;
-char SNombre[50];
-std::string SArtista;
-char SDuracion[20];
-char SGenero[50];
-char SRutaMusica[_MAX_PATH];
+// Global Class
+ControllerSongs* ctrlSongs = new ControllerSongs;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Programa main \n";
+    ctrlSongs->createSong(1, "PumpedUpKicks", "FosterThePeople", "4:15", "Indie", "https://youtu.be/SDTZ7iX4vTQ", false);
+    ctrlSongs->printSong();
     system("pause");
 }
+
+
